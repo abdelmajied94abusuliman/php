@@ -47,3 +47,23 @@ echo "Your IP Address is " . $ipaddress;
 
 
 echo '<hr>';
+
+
+echo "<span style='color : red'>P</span>HP Tutorial";
+
+echo '<hr>';
+$url = 'https://www.w3schools.com/php/default.asp';
+$url=parse_url($url);
+echo 'Scheme : '.$url['scheme']."<br>";
+echo 'Host : '.$url['host']."<br>";
+echo 'Path : '.$url['path']."<br>";
+
+
+echo '<hr>';
+
+echo 'Redirect the user to <a href="https://www.w3schools.com/php/default.asp">This Page</a> when the user click';
+
+echo '<hr>';
+
+$current_file_name = basename($_SERVER['PHP_SELF']);
+echo $current_file_name."\n";
